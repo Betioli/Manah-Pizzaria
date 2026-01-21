@@ -2554,8 +2554,8 @@
 
     <script>
         // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        const backToTop = document.getElementById('backToTop');
+        const Navbar = document.getElementById('navbar');
+        const BackToTop = document.getElementById('backToTop');
         
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
@@ -2597,12 +2597,12 @@
         });
 
         // Fade in animation on scroll
-        const observerOptions = {
+        const ObserverOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver((entries) => {
+        const Observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
@@ -2616,5 +2616,3 @@
     </script>
 </body>
 </html>
-
->>>>>>> d05088008f380c602c8dad5e8f5ad8d3216b5b2e
